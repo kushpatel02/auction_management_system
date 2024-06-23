@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <h1 class="ams">
+        AUCTION MANAGEMENT SYSTEM
+    </h1>
+
+    <section id="box1">
+        <div class="container">
+            <table class="auction_list">
+                <tr>&nbsp&nbsp
+                    <img class="img-container" src="img/rolls_royce.jpg" />
+
+                </tr>
+                <tr>&nbsp&nbsp
+                    <img class="img-container2" src="img/painting.jpg" />
+                </tr>
+                <tr>&nbsp&nbsp
+                    <img class="img-container3" src="img/vinyl_player.jpg">
+                </tr>
+                <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Rolls Royce &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp</td>
+                <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    Painting &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp</td>
+                <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspVinyl Player&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp</td>
+
+                <tr>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Item Number 100104</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Item Number 100105</td>
+                    <td>&nbsp &nbsp &nbsp &nbsp &nbsp Item Number 100106</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="box2">
+        <div class="container">
+            <div class="left">
+                <h1>Auction Management System</h1>
+                <form id="record-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="number" id="age" placeholder="Item Number" required>
+                    <input type="text" id="email" placeholder="Bidding Amount ($)" required>
+                    <button type="submit">Add Record</button>
+                    <input type="hidden" id="edit-index" value="-1">
+                </form>
+            </div>
+            <div class="right">
+                <h2>Records</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Number</th>
+                            <th>Biddding Amount ($)</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="record-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="Script/script.js"></script>
+</body>
+
+</html>
